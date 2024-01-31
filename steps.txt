@@ -1,0 +1,18 @@
+### Initial Setups
+-   Clone the started code from the YT source
+-   Install Prisma
+-   Init Prisma
+-   Create a database on planetscale.com
+-   Copy the supabase database URL and paste into .env variable
+-   Create a user model schema
+-   prisma migrate (`npx prisma migrate dev --name init`)
+-   Install Prisma client (`npm install @prisma/client`)
+-   Create a new lib file as db.ts for initiating the prisma client
+
+-   Create a new api route for user
+-   Install bcrypt (`npm i bcrypt` && `npm i --save-dev @types/bcrypt`) to Hash the password
+-   Make a api validation through the zod form schema
+-   Make a POST request from the Sign-up form
+-   Try the Sign-up form, It will work as expected
+
+-   Install the NextAuth (`npm install next-auth`)
