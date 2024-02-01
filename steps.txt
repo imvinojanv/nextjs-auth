@@ -16,3 +16,24 @@
 -   Try the Sign-up form, It will work as expected
 
 -   Install the NextAuth (`npm install next-auth`)
+-   Create a new api route for NextAuth (`/api/auth/[...nextauth]/route.ts`)
+-   Create a new lib file for auth
+-   Refer the Providers>Credentials in NextAuth docs
+-   Add Credential Providers within auth and add custom signin form
+-   Install @next-auth/prisma-adapter (`npm i @next-auth/prisma-adapter`) 
+-   Add the prisma adapter in auth.ts
+-   Add the session strategy in auth.ts (It's default as 'jwt')
+-   Modify the Autherize function
+-   Change the Signin form onSubmit function
+
+
+###
+-   Install (npm i axios cookie jsonwebtoken)
+-   Install (npm i --save-dev @types/jsonwebtoken && npm i --save-dev @types/cookie)
+-   Create a new api route for login and check the password is same
+-   Sign the token and Serialize the token to cookie
+-   Check the login is working, and check the cookie is storing
+
+-   Create a new route for Dashboard
+-   Create a Dashboard layout file to check the user login
+-   Check and verify the cookie data if it's not valid redirect to sign-in page
